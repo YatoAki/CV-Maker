@@ -1,0 +1,15 @@
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer{
+  background-color: var(--black);
+  color: white;
+  display: flex;
+  padding: 15px 50px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  justify-content: center;
+}
