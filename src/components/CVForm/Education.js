@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import inputCard from "./inputCard.css";
+import "./styles/inputCard.css";
 import EducationItems from "./EducationItems.js"
 
 

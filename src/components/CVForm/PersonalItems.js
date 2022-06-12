@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import inputItems from "./item.css"
+import "./styles/item.css";
 
 
 export default class ExperienceItems extends Component{

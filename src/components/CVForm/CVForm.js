@@ -1,5 +1,5 @@
 import React,{Component} from "react"
-import "./CVForm.css"
+import "./styles/CVForm.css"
 import Personal from "./Personal.js"
 import Experience from "./Experience.js"
 import Education from "./Education.js"

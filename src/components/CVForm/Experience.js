@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import inputCard from "./inputCard.css";
-import ExperienceItems from "./ExperienceItems";
+import "./styles/inputCard.css";
+import ExperienceItems from "./ExperienceItems.js";
 
 export default class Experience extends Component{
 
