@@ -7,11 +7,11 @@ export default class ExperienceItems extends Component{
   render(){
     return(
       <div className="inputItems">
-        <input type="text" id="positionInput" placeholder="Position"/>
-        <input type="text" id="companyInput" placeholder="Company"/>
-        <input type="text" id="cityInput" placeholder="City"/>
-        <input type="number" id="fromInput" placeholder="From"/>
-        <input type="number" id="toInput" placeholder="To"/>
+        <input type="text" name="position" placeholder="Position"/>
+        <input type="text" name="company" placeholder="Company"/>
+        <input type="text" name="city" placeholder="City"/>
+        <input type="number" name="from" placeholder="From"/>
+        <input type="number" name="to" placeholder="To"/>
       </div>
     );
   }

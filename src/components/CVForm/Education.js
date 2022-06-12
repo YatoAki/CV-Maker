@@ -10,8 +10,6 @@ export default class Education extends Component{
       <div className="inputCard">
         <h3>Education</h3>
         <EducationItems/>
-        <EducationItems/>
-        <EducationItems/>
       </div>
     );
   }

@@ -7,11 +7,11 @@ export default class EducationItems extends Component{
   render(){
     return(
       <div className="inputItems">
-        <input type="text" id="uniInput" placeholder="University Name"/>
-        <input type="text" id="degreeInput" placeholder="Degree"/>
-        <input type="text" id="cityInput" placeholder="City"/>
-        <input type="number" id="fromInput" placeholder="From"/>
-        <input type="number" id="toInput" placeholder="To"/>
+        <input type="text" name="uniName" placeholder="University Name"/>
+        <input type="text" name="degree" placeholder="Degree"/>
+        <input type="text" name="city" placeholder="City"/>
+        <input type="number" name="from" placeholder="From"/>
+        <input type="number" name="to" placeholder="To"/>
       </div>
     );
   }
