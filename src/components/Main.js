@@ -21,7 +21,11 @@ export default class Main extends Component{
 
   handleChangePersonal = (e) =>{
     const {name, value} = e.target;
-    console.log(name,value);
+    this.setState((prevState) => {
+      let personalInfo = Object.assign({},prevState.personalInfo);
+      personalInfo[name] = value;
+      return {personalInfo};
+    })
   }
 
   render(){
