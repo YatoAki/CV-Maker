@@ -1,0 +1,29 @@
+.inputItems{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+
+.inputItems > input, textarea{
+  font-family: inherit;
+  color: var(--black);
+  font-weight: 300;
+  background:white;
+  height: 30px;
+  padding: 0 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.inputItems > input:focus{
+  outline: none;
+}
+
+.inputItems > textarea{
+  resize: none;
+  padding: 8px 15px;
+  height: 80px;
+}

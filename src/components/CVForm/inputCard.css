@@ -1,32 +1,4 @@
-h3{
-  margin: 0;
+.inputCard > h3{
   padding: 0;
-  margin-bottom: 5px;
-}
-
-.inputCard{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.inputCard > input, textarea{
-  font-family: inherit;
-  color: var(--black);
-  font-weight: 300;
-  background:white;
-  height: 30px;
-  padding: 0 15px;
-  border: 1px solid white;
-  border-radius: 5px;
-}
-
-.inputCard > input:focus{
-  outline: none;
-}
-
-.inputCard > textarea{
-  resize: none;
-  padding: 8px 15px;
-  height: 80px;
+  margin: 0;
 }
