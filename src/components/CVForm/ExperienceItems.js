@@ -5,14 +5,14 @@ import "./styles/item.css"
 export default class ExperienceItems extends Component{
 
   render(){
-    const {onChangeExperience} = this.props;
+    const {onChangeExperience,id} = this.props;
     return(
       <div className="inputItems">
-        <input type="text" name="position" placeholder="Position" onChange={onChangeExperience}/>
-        <input type="text" name="company" placeholder="Company" onChange={onChangeExperience}/>
-        <input type="text" name="city" placeholder="City" onChange={onChangeExperience}/>
-        <input type="number" name="from" placeholder="From" onChange={onChangeExperience}/>
-        <input type="number" name="to" placeholder="To" onChange={onChangeExperience}/>
+        <input type="text" name="position" placeholder="Position" onChange={(e) => onChangeExperience(e,id)}/>
+        <input type="text" name="company" placeholder="Company" onChange={(e) => onChangeExperience(e,id)}/>
+        <input type="text" name="city" placeholder="City" onChange={(e) => onChangeExperience(e,id)}/>
+        <input type="number" name="from" placeholder="From" onChange={(e) => onChangeExperience(e,id)}/>
+        <input type="number" name="to" placeholder="To" onChange={(e) => onChangeExperience(e,id)}/>
       </div>
     );
   }

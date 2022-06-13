@@ -26,6 +26,14 @@ export default class Main extends Component{
           from:"",
           to:""
         },
+        {
+          id: uniqid(),
+          position:"",
+          company:"",
+          city:"",
+          from:"",
+          to:""
+        },
       ],
       education:[
         {
@@ -43,14 +51,22 @@ export default class Main extends Component{
   handleChangePersonal = (e) =>{
     const {name, value} = e.target;
     this.setState((prevState) => {
-      let personalInfo = Object.assign({},prevState.personalInfo);
-      personalInfo[name] = value;
-      return {personalInfo};
+      let newPersonalInfo = {...prevState.personalInfo, [name]:value};
+      return {...prevState, personalInfo: {...newPersonalInfo}};
     })
   }
 
   handleChangeExperience = (e,id) =>{
-    
+    const {name, value} = e.target;
+    this.setState((prevState) => {
+      let newExperience = prevState.experience.map((experienceItem) => {
+        if (experienceItem.id === id){
+          return { ...experienceItem, [name]: value };
+        }
+        return experienceItem;
+      })
+      return { ...prevState, experience: [...newExperience] }
+    })
   }
 
   render(){
