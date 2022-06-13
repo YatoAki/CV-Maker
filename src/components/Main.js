@@ -26,16 +26,16 @@ export default class Main extends Component{
           from:"",
           to:""
         },
+      ],
+      education:[
         {
           id: uniqid(),
-          position:"",
-          company:"",
+          name:"",
+          degree:"",
           city:"",
           from:"",
           to:""
         },
-      ],
-      education:[
         {
           id: uniqid(),
           name:"",
@@ -69,12 +69,28 @@ export default class Main extends Component{
     })
   }
 
+  handleChangeEducation = (e,id) =>{
+    const {name, value} = e.target;
+    this.setState((prevState) => {
+      let newEducation = prevState.education.map((educationItem) => {
+        if (educationItem.id === id){
+          return { ...educationItem, [name]: value };
+        }
+        return educationItem;
+      })
+      return { ...prevState, education: [...newEducation] }
+    })
+  }
+
+
   render(){
     return(
       <div className="main">
         <CVForm
           onChangePersonal={this.handleChangePersonal}
           onChangeExperience={this.handleChangeExperience}
+          onChangeEducation={this.handleChangeEducation}
+          education= {this.state.education}
           experience= {this.state.experience}/>
         <CVPreview/>
       </div>
