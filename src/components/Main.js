@@ -36,14 +36,6 @@ export default class Main extends Component{
           from:"",
           to:""
         },
-        {
-          id: uniqid(),
-          name:"",
-          degree:"",
-          city:"",
-          from:"",
-          to:""
-        },
       ],
     }
   }
@@ -79,6 +71,38 @@ export default class Main extends Component{
         return educationItem;
       })
       return { ...prevState, education: [...newEducation] }
+    })
+  }
+
+  handleAddEducation = () => {
+    this.setState((prevState) => {
+      return {...prevState, education: [
+        ...prevState.education,{
+          id: uniqid(),
+          name:"",
+          degree:"",
+          city:"",
+          from:"",
+          to:""
+        }
+      ]
+      }
+    })
+  }
+
+  handleAddExperience = () => {
+    this.setState((prevState) => {
+      return {...prevState, experience: [
+        ...prevState.experience,{
+          id: uniqid(),
+          position:"",
+          company:"",
+          city:"",
+          from:"",
+          to:""
+        },
+      ]
+      }
     })
   }
 
