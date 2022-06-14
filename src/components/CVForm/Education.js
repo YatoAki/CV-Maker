@@ -9,6 +9,7 @@ export default class Education extends Component{
     const {
       onChangeEducation,
       education,
+      onDelete,
       onAdd
     } = this.props;
     const educationItems = education.map((educationItem) => {
@@ -22,7 +23,7 @@ export default class Education extends Component{
         <h3>Education</h3>
         {educationItems}
         <button onClick={onAdd}>Add</button>
-        <button>Delete</button>
+        <button onClick={onDelete}>Delete</button>
       </div>
     );
   }

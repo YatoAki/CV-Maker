@@ -13,13 +13,16 @@
   border: none;
   background-color: var(--black);
   color: white;
-  margin-bottom: 10px;
+  margin-top: 10px;
   font-family: inherit;
   font-weight: 400;
   height: 30px;
   padding: 0 15px;
   border-radius: 5px;
   cursor: pointer;
+}
+.inputCard > button:first-child{
+  margin-top: 10px;
 }
 
 .inputCard > button:last-child{

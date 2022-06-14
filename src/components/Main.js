@@ -106,6 +106,26 @@ export default class Main extends Component{
     })
   }
 
+  handleDeleteExperience = () => {
+    this.setState((prevState) => {
+      const newState = JSON.parse(JSON.stringify(prevState));
+      newState.experience.pop();
+      return {...prevState,experience:[
+        ...newState.experience
+      ]}
+    })
+  }
+
+  handleDeleteEducation = () => {
+    this.setState((prevState) => {
+      const newState = JSON.parse(JSON.stringify(prevState));
+      newState.education.pop();
+      return {...prevState,education:[
+        ...newState.education
+      ]}
+    })
+  }
+
 
   render(){
     return(
@@ -117,7 +137,9 @@ export default class Main extends Component{
           education= {this.state.education}
           experience= {this.state.experience}
           onAddExperience= {this.handleAddExperience}
-          onAddEducation= {this.handleAddEducation}/>
+          onAddEducation= {this.handleAddEducation}
+          onDeleteExperience={this.handleDeleteExperience}
+          onDeleteEducation={this.handleDeleteEducation}/>
         <CVPreview/>
       </div>
     );

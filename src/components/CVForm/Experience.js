@@ -8,6 +8,7 @@ export default class Experience extends Component{
     const {
       onChangeExperience,
       experience,
+      onDelete,
       onAdd
     } = this.props;
     const experienceItems = experience.map((experienceItems) => {
@@ -22,6 +23,7 @@ export default class Experience extends Component{
         <h3>Experience</h3>
         {experienceItems}
         <button onClick={onAdd}>Add</button>
+        <button onClick={onDelete}>Delete</button>
       </div>
     );
   }

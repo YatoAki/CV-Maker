@@ -13,6 +13,8 @@ export default class CVForm extends Component{
       onChangeEducation,
       onAddEducation,
       onAddExperience,
+      onDeleteExperience,
+      onDeleteEducation,
       education,
       experience
     } = this.props;
@@ -22,11 +24,13 @@ export default class CVForm extends Component{
         <Experience
           onChangeExperience={onChangeExperience}
           experience = {experience}
-          onAdd = {onAddExperience}/>
+          onAdd = {onAddExperience}
+          onDelete={onDeleteExperience}/>
         <Education
           onChangeEducation={onChangeEducation}
           education = {education}
-          onAdd = {onAddEducation}/>
+          onAdd = {onAddEducation}
+          onDelete={onDeleteEducation}/>
       </div>
     );
   }
