@@ -2,3 +2,26 @@
   padding: 0;
   margin: 0;
 }
+
+.inputCard{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.inputCard > button{
+  border: none;
+  background-color: var(--black);
+  color: white;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-weight: 400;
+  height: 30px;
+  padding: 0 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inputCard > button:last-child{
+  margin-bottom: 20px;
+}

@@ -6,7 +6,11 @@ import EducationItems from "./EducationItems.js"
 export default class Education extends Component{
 
   render(){
-    const {onChangeEducation, education} = this.props;
+    const {
+      onChangeEducation,
+      education,
+      onAdd
+    } = this.props;
     const educationItems = education.map((educationItem) => {
       return (<EducationItems
         onChangeEducation={onChangeEducation}
@@ -17,6 +21,8 @@ export default class Education extends Component{
       <div className="inputCard">
         <h3>Education</h3>
         {educationItems}
+        <button onClick={onAdd}>Add</button>
+        <button>Delete</button>
       </div>
     );
   }

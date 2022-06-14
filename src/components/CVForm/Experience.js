@@ -5,7 +5,11 @@ import ExperienceItems from "./ExperienceItems.js";
 export default class Experience extends Component{
 
   render(){
-    const {onChangeExperience,experience} = this.props;
+    const {
+      onChangeExperience,
+      experience,
+      onAdd
+    } = this.props;
     const experienceItems = experience.map((experienceItems) => {
       return (<ExperienceItems
         onChangeExperience={onChangeExperience}
@@ -17,6 +21,7 @@ export default class Experience extends Component{
       <div className="inputCard">
         <h3>Experience</h3>
         {experienceItems}
+        <button onClick={onAdd}>Add</button>
       </div>
     );
   }

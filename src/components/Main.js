@@ -115,7 +115,9 @@ export default class Main extends Component{
           onChangeExperience={this.handleChangeExperience}
           onChangeEducation={this.handleChangeEducation}
           education= {this.state.education}
-          experience= {this.state.experience}/>
+          experience= {this.state.experience}
+          onAddExperience= {this.handleAddExperience}
+          onAddEducation= {this.handleAddEducation}/>
         <CVPreview/>
       </div>
     );

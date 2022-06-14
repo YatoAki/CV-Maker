@@ -7,16 +7,26 @@ import Education from "./Education.js"
 export default class CVForm extends Component{
 
   render(){
-    const {onChangePersonal, onChangeExperience, onChangeEducation, education, experience} = this.props;
+    const {
+      onChangePersonal,
+      onChangeExperience,
+      onChangeEducation,
+      onAddEducation,
+      onAddExperience,
+      education,
+      experience
+    } = this.props;
     return(
       <div className="cvform">
         <Personal onChangePersonal={onChangePersonal}/>
         <Experience
           onChangeExperience={onChangeExperience}
-          experience = {experience}/>
+          experience = {experience}
+          onAdd = {onAddExperience}/>
         <Education
           onChangeEducation={onChangeEducation}
-          education = {education}/>
+          education = {education}
+          onAdd = {onAddEducation}/>
       </div>
     );
   }
