@@ -1,0 +1,26 @@
+.sidebarArea{
+  width: 35%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  overflow: hidden;
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.sidebarArea > div{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  font-size: 15px;
+}
+
+.sidebarArea > div > span:first-child{
+  font-weight: 500;
+}
+
+.sidebarArea > div > span:last-child{
+  font-weight: 300;
+}

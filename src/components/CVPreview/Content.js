@@ -1,4 +1,5 @@
 import React,{Component} from "react";
+import "./styles/contentArea.css"
 
 
 export default class Content extends Component{

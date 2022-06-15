@@ -11,8 +11,10 @@ export default class CVPreview extends Component{
     return(
       <div className="cvpreview">
         <Header personalInfo = {cvInfo.personalInfo}/>
-        <Content experience = {cvInfo.experience} education = {cvInfo.education}/>
-        <Sidebar personalInfo = {cvInfo.personalInfo}/>
+        <div style={{display: 'flex',flexGrow:'1'}}>
+          <Content experience = {cvInfo.experience} education = {cvInfo.education}/>
+          <Sidebar personalInfo = {cvInfo.personalInfo}/>
+        </div>
       </div>
     );
   }
