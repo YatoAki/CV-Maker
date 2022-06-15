@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-
+import "./styles/headerArea.css";
 
 export default class Header extends Component{
 

@@ -1,5 +1,6 @@
 .cvform{
-  width: 50%;
+  width: 55%;
+  box-sizing: border-box;
   margin: 50px;
   background-color: var(--gray);
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);

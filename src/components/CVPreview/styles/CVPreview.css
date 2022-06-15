@@ -1,8 +1,7 @@
 .cvpreview{
-  width: 50%;
+  width: 55%;
   height: 800px;
   margin: 50px;
   background-color: var(--gray);
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-  padding:50px;
 }
