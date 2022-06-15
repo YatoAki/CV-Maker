@@ -140,7 +140,7 @@ export default class Main extends Component{
           onAddEducation= {this.handleAddEducation}
           onDeleteExperience={this.handleDeleteExperience}
           onDeleteEducation={this.handleDeleteEducation}/>
-        <CVPreview/>
+        <CVPreview cvInfo = {this.state}/>
       </div>
     );
   }
