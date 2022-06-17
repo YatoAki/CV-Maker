@@ -1,0 +1,23 @@
+.previewItems{
+  display: flex;
+  gap:30px;
+  padding-top: 20px;
+  line-height: 1.5em;
+}
+
+.previewItems > div:first-child{
+  width: 20%;
+}
+
+.previewItems > div:last-child{
+  width: 70%;
+}
+
+.previewItems > div > span:first-child{
+  font-weight: 500;
+}
+
+.previewItems > div{
+  display: flex;
+  flex-direction: column;
+}

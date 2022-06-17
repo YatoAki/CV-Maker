@@ -7,7 +7,7 @@ export default class Education extends Component {
     const {education} = this.props;
     const educationItems = education.map((eachEducation) => {
       return(
-        <EducationItems education={eachEducation}/>
+        <EducationItems education={eachEducation} key={eachEducation.id}/>
       )
     })
     return(
