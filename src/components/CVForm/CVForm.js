@@ -35,7 +35,6 @@ export default class CVForm extends Component{
           onDelete={onDeleteEducation}/>
         <button onClick={onLoadExample} className="blue">Load Example</button>
         <button onClick={onReset} className="red">Reset</button>
-        <button onClick={onLoadExample} className="green">Get PDF</button>
       </div>
     );
   }
