@@ -11,8 +11,8 @@ export default class ExperienceItems extends Component{
         <input type="text" name="position" placeholder="Position" onChange={(e) => onChangeExperience(e,id)}/>
         <input type="text" name="company" placeholder="Company" onChange={(e) => onChangeExperience(e,id)}/>
         <input type="text" name="city" placeholder="City" onChange={(e) => onChangeExperience(e,id)}/>
-        <input type="number" name="from" placeholder="From" onChange={(e) => onChangeExperience(e,id)}/>
-        <input type="number" name="to" placeholder="To" onChange={(e) => onChangeExperience(e,id)}/>
+        <input type="text" name="from" placeholder="From" onChange={(e) => onChangeExperience(e,id)}/>
+        <input type="text" name="to" placeholder="To" onChange={(e) => onChangeExperience(e,id)}/>
       </div>
     );
   }

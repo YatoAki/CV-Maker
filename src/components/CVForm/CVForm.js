@@ -8,6 +8,8 @@ export default class CVForm extends Component{
 
   render(){
     const {
+      onReset,
+      onLoadExample,
       onChangePersonal,
       onChangeExperience,
       onChangeEducation,
@@ -31,6 +33,9 @@ export default class CVForm extends Component{
           education = {education}
           onAdd = {onAddEducation}
           onDelete={onDeleteEducation}/>
+        <button onClick={onLoadExample} className="blue">Load Example</button>
+        <button onClick={onReset} className="red">Reset</button>
+        <button onClick={onLoadExample} className="green">Get PDF</button>
       </div>
     );
   }

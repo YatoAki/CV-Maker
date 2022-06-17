@@ -40,6 +40,96 @@ export default class Main extends Component{
     }
   }
 
+  handleReset = (e) => {
+    const newState = {
+      personalInfo:{
+        name:"",
+        role:"",
+        address:"",
+        phone:"",
+        email:"",
+        description:""
+      },
+      experience:[
+        {
+          id: uniqid(),
+          position:"",
+          company:"",
+          city:"",
+          from:"",
+          to:""
+        },
+      ],
+      education:[
+        {
+          id: uniqid(),
+          name:"",
+          degree:"",
+          city:"",
+          from:"",
+          to:""
+        },
+      ],
+    }
+    this.setState((prevState) => {
+
+      return {...prevState, ...newState}
+    })
+  }
+
+  handleLoadExample = (e) => {
+    const newState = {
+      personalInfo:{
+        name:"Do Do",
+        role:"Super Engineer",
+        address:"Yangon, Myanmar",
+        phone:"09875187451",
+        email:"madodo@gmail.com",
+        description:"I am a Computer Science enthusiast with a strong passion for software development. At this moment, I am actively looking for a chance to take part in a software development team and be part of the history."
+      },
+      experience:[
+        {
+          id: uniqid(),
+          position:"UI UX Designer",
+          company:"Super Do Marketing Agency",
+          city:"Yangon, Myanmar",
+          from:"2021",
+          to:"Present"
+        },
+        {
+          id: uniqid(),
+          position:"Artificial Intelligence Engineer",
+          company:"Google",
+          city:"United State",
+          from:"2019",
+          to:"2021"
+        },
+      ],
+      education:[
+        {
+          id: uniqid(),
+          name:"Harvard University",
+          degree:"Master in Business Management",
+          city:"United State",
+          from:"2017",
+          to:"2021"
+        },
+        {
+          id: uniqid(),
+          name:"Myanmar Institute of Information Technology",
+          degree:"B.E (Hons) in Electronic and Communication Engineering",
+          city:"Mandalay",
+          from:"2015",
+          to:"2017"
+        },
+      ],
+    }
+    this.setState((prevState) => {
+
+      return {...prevState, ...newState}
+    })
+  }
+
   handleChangePersonal = (e) =>{
     const {name, value} = e.target;
     this.setState((prevState) => {
@@ -131,6 +221,8 @@ export default class Main extends Component{
     return(
       <div className="main">
         <CVForm
+          onReset={this.handleReset}
+          onLoadExample={this.handleLoadExample}
           onChangePersonal={this.handleChangePersonal}
           onChangeExperience={this.handleChangeExperience}
           onChangeEducation={this.handleChangeEducation}

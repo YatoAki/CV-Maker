@@ -11,8 +11,8 @@ export default class experienceItems extends Component {
           <span>{experience.from} - {experience.to}</span>
         </div>
         <div>
-          <span>{experience.company}, {experience.city}</span>
           <span>{experience.position}</span>
+          <span>{experience.company}, {experience.city}</span>        
         </div>
       </div>
     )
