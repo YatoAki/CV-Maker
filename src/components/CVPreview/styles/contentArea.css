@@ -1,3 +1,14 @@
 .contentArea{
   width: 70%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  font-weight: 300;
+}
+
+p{
+  margin: 0;
+  padding: 20px 0 0 0;
+  line-height: 1.5em;
 }
